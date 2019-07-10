@@ -1,6 +1,6 @@
 # WDKLearningNotes
 ## [目录](README.md) 
-## 1. WDF开发环
+## 1. WDF开发环境
 
 * [1.1. 开发环境搭建](1.1.md)
 * [1.2. windbg调试配置](1.2.md)
