@@ -244,6 +244,31 @@
 <p>&#x4E00;&#x822C;windbg&#x5DE5;&#x5177;&#x90FD;&#x5728;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#x4E0B; 
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe </p>
 <p>&#xFF08;2&#xFF09;&#x73AF;&#x5883;&#x914D;&#x7F6E; </p>
+<p>&#x5728;&#x7EBF;&#x9A71;&#x52A8;&#x8C03;&#x8BD5;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x5230;&#x6587;&#x5B57;&#x7B26;&#x53F7;&#xFF1B;&#x5426;&#x5219;&#x5728;&#x8054;&#x8C03;&#x65F6;&#x5019;&#x65E0;&#x6CD5;&#x65AD;&#x70B9;&#x8C03;&#x8BD5;&#x3002;&#x57FA;&#x7840;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x65B9;&#x5F0F;&#xFF0C;
+&#x5728;&#x3010;&#x6211;&#x7684;&#x7535;&#x8111;&#x3011;-&#x3010;&#x5C5E;&#x6027;&#x3011;-&#x3010;&#x9AD8;&#x7EA7;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;&#x3011;-&#x3010;&#x9AD8;&#x7EA7;&#x3011;-&#x3010;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3011;&#x4E2D;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x9879;&#x3002;</p>
+<pre><code>&#x53D8;&#x91CF;&#x540D;&#xFF1A; _NT_SYMBOL_PATH 
+&#x53D8;&#x91CF;&#x503C;&#xFF1A;  c:\pro\mysymbol;SRV*c:\pro\mysymbol*http://msdl.microsoft.com/download/symbols 
+</code></pre><p><img src="img/1.3.2.1.png" alt=""></p>
+<p><img src="img/1.3.2.2.png" alt=""></p>
+<p><img src="img/1.3.2.3.png" alt=""></p>
+<h3 id="133-vs&#x4E2D;&#x521B;&#x5EFA;&#x8054;&#x8C03;">1.3.3. VS&#x4E2D;&#x521B;&#x5EFA;&#x8054;&#x8C03;</h3>
+<p>&#xFF08;1&#xFF09;&#x6253;&#x5F00;VS&#x5DE5;&#x5177;&#xFF0C;&#x914D;&#x7F6E;&#x8C03;&#x8BD5;&#x8BBE;&#x5907;</p>
+<pre><code>&#x663E;&#x793A;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;
+</code></pre><p><img src="img/1.3.3.1.png" alt=""></p>
+<p>&#xFF08;2&#xFF09;&#x4E32;&#x53E3;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;</p>
+<pre><code>Transport&#xFF1A;Serial &#x4E32;&#x53E3;&#x7C7B;&#x578B; 
+Port&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5EFA;&#x7ACB;&#x865A;&#x62DF;&#x7BA1;&#x9053; 
+Baud&#xFF1A;115200 &#x524D;&#x9762;&#x7AE0;&#x8282;msconfig&#x914D;&#x7F6E;&#x8C03;&#x8BD5;&#x65F6;&#x8BBE;&#x7F6E;&#x6CE2;&#x7279;&#x7387;&#x4E00;&#x81F4;
+&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;
+</code></pre><p><img src="img/1.3.3.2.png" alt=""></p>
+<p>&#xFF08;3&#xFF09;&#x7F51;&#x7EDC;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F; </p>
+<pre><code>Network host name: &#x76EE;&#x6807;&#x673A;&#x5B50;IP 
+Transport&#xFF1A; Network 
+Port&#xFF1A;  5000   &#x8981;&#x548C;&#x524D;&#x9762;&#x7AE0;&#x8282;bcdedit&#x914D;&#x7F6E;&#x7F51;&#x7EDC;&#x6A21;&#x5F0F;&#x65F6;&#x7684;&#x7AEF;&#x53E3;&#x4E00;&#x81F4;
+Key&#xFF1A; &#x524D;&#x9762;&#x76EE;&#x6807;&#x673A;&#x5B50;&#x4E0A;&#x7684;&#x5BC6;&#x7801;
+HostIP&#xFF1A; &#x672C;&#x673A;&#x8C03;&#x8BD5;IP&#x5730;&#x5740; 
+&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;   
+</code></pre><p><img src="img/1.3.3.3.png" alt=""></p>
 
                                 
                                 </section>
@@ -287,7 +312,7 @@ C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe </p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.3. windbg调试配置","level":"2.3","depth":1,"next":{"title":"2.1. IO驱动开发","level":"3.1","depth":1,"path":"2.1.md","ref":"2.1.md","articles":[]},"previous":{"title":"1.2. bcdedit调试配置","level":"2.2","depth":1,"path":"1.2.md","ref":"1.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1.3.md","mtime":"2019-07-14T03:55:07.111Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-14T03:59:52.936Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.3. windbg调试配置","level":"2.3","depth":1,"next":{"title":"2.1. IO驱动开发","level":"3.1","depth":1,"path":"2.1.md","ref":"2.1.md","articles":[]},"previous":{"title":"1.2. bcdedit调试配置","level":"2.2","depth":1,"path":"1.2.md","ref":"1.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1.3.md","mtime":"2019-07-14T15:35:03.856Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-14T15:35:13.797Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
